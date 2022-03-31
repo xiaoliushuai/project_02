@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+
+
+
+
+// (function tesr (){
+//     console.log("abc")
+// }())
+
+
+// (function (){
+//     for(i = 1;i < 101;i++){
+//         console.log(i + " ");
+//     }
+// }())
+
+// function fb(a){
+//     if(a == 1 || a == 2){
+//         return 1;
+//     }
+//     return fb(a - 1) +fb(a - 2);
+// }
+
+
+
+//利用立即执行函数解决闭包
+// function test(){
+//     var arr = [];
+//     for(var i = 0; i < 10;i ++){
+//         (function(j){
+//             arr[j] = function(){
+//                 console.log(j + " ");
+//             }
+//         }(i))
+//     }
+//     return arr;
+   
+// }
+// var myarr = test ();
+// for (var j = 0;j < 10; j++){
+//     myarr[j]();
+// }
+    // function add(){
+    //     var num = 0;
+    //     function a(){
+    //         console.log(++num);
+    //     }
+    //     return a;
+    // }
+    // var myAdd = add();
+    // myAdd();
+    // myAdd();
+    // myAdd();
+    var mrDeng = {
+        name : 'mrDeng',
+        sex : "male",
+        age : 30,
+        health : 100,
+        smoke : function(){
+            console.log("i am smokeing");
+            this.health --;
+        },
+        drink : function(){
+            console.log('i am drinking');
+            this.health ++;
+        }
+    }
+    // 增加属性
+    mrDeng.wifi = "xiaoli"
+    // 删除属性
+    delete mrDeng.wifi
+    // 查阅属性
+    mrDeng.age
+    //修改属性
+    mrDeng.age = 40
+    </script>
+</body>
+</html>

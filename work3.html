@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n = parseInt(window.prompt("请输入一个三位数"))
+        // 例如256
+        var a = n % 10; //取个位数的数字 6
+        var d = n - a;    //250
+        var b =  d % 100; //取十位数  50
+        var c = d - b;  // 200
+        var e = c / 100; //取百位数的数字 2
+        document.write(a * 100 + b + e);
+
+    </script>
+
+</body>
+</html>
